@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>HollywoodDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{25587be6-2de3-459a-a306-75af7baf73b1}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>HollywoodDB</RootNamespace>
+    <AssemblyName>HollywoodDB</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\ActualPayments.sql" />
+    <Build Include="dbo\Tables\LoanStatusCodes.sql" />
+    <Build Include="dbo\Tables\PaymentStatusCodes.sql" />
+    <Build Include="dbo\Tables\PlannedPayments.sql" />
+    <Build Include="dbo\Tables\AspNetRoles.sql" />
+    <Build Include="dbo\Tables\AspNetUserRoles.sql" />
+    <Build Include="dbo\Tables\AspNetUsers.sql" />
+    <Build Include="dbo\Tables\Courses.sql" />
+    <Build Include="dbo\Tables\AspNetUserClaims.sql" />
+    <Build Include="dbo\Tables\AspNetUserLogins.sql" />
+    <Build Include="dbo\Tables\__MigrationHistory.sql" />
+    <Build Include="dbo\Tables\Students.sql" />
+    <Build Include="dbo\Tables\Status.sql" />
+    <Build Include="dbo\Tables\StudentType.sql" />
+    <Build Include="dbo\Tables\Genders.sql" />
+    <Build Include="dbo\Tables\StateCodes.sql" />
+    <Build Include="dbo\Tables\StudentLoans.sql" />
+    <Build Include="dbo\Tables\DailyEvent.sql" />
+    <Build Include="dbo\Views\vwActiveStudentsLatestEvent.sql" />
+    <Build Include="dbo\Views\vwPaymentSchedules.sql" />
+    <Build Include="dbo\Views\vwStudentEvents.sql" />
+    <Build Include="dbo\Views\vwDailyEvents.sql" />
+    <Build Include="Security\hollywoo_tony.sql" />
+    <Build Include="Security\hollywoo_tony_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetActiveStudentList.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetActiveStudentInClass.sql" />
+    <Build Include="dbo\Stored Procedures\uspGeneratePaymentPlan.sql" />
+    <Build Include="dbo\Stored Procedures\uspPunchIn.sql" />
+    <Build Include="dbo\Stored Procedures\uspPunchOut.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetStudentDailyEvents.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetStudentTodayEvent.sql" />
+    <Build Include="dbo\Stored Procedures\uspAddStudent.sql" />
+    <Build Include="dbo\Stored Procedures\uspDeleteStudent.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetStudent.sql" />
+    <Build Include="dbo\Stored Procedures\uspSaveStudent.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdateStudent.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetStudents.sql" />
+    <Build Include="dbo\Stored Procedures\uspStudentSummaryRpt.sql" />
+    <Build Include="dbo\Stored Procedures\uspDropStudent.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetGenders.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetStateCodes.sql" />
+    <Build Include="dbo\Stored Procedures\uspAddDailyEvent.sql" />
+    <Build Include="dbo\Stored Procedures\uspUpdateDailyEvent.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetStudentCurrentEvent.sql" />
+    <Build Include="dbo\Stored Procedures\uspLookupStudent.sql" />
+    <Build Include="dbo\Stored Procedures\uspGetEventsByDateRange.sql" />
+    <Build Include="dbo\Stored Procedures\uspGeStudentEventsByDateRange.sql" />
+    <Build Include="Security\hollywoo_dao_1.sql" />
+    <Build Include="Security\hollywoo_tony_2.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HollywoodDB.publish.xml" />
+    <None Include="HollywoodDBLocal.publish.xml" />
+  </ItemGroup>
+</Project>

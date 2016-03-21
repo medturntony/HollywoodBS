@@ -1,0 +1,10 @@
+F:\GDrive\Projects\Business\Hollywood\HollywoodDB\bin\Debug\HollywoodDB.dacpac
+F:\GDrive\Projects\Business\Hollywood\HollywoodDB\bin\Debug\HollywoodDB.dll
+F:\GDrive\Projects\Business\Hollywood\HollywoodDB\bin\Debug\HollywoodDB.pdb
+F:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Debug\HollywoodDB.dll
+F:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Debug\HollywoodDB.pdb
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\bin\Debug\HollywoodDB.dacpac
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\bin\Debug\HollywoodDB.dll
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\bin\Debug\HollywoodDB.pdb
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Debug\HollywoodDB.dll
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Debug\HollywoodDB.pdb

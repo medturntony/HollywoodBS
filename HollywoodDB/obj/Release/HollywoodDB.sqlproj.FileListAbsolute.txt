@@ -1,0 +1,9 @@
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\bin\Release\HollywoodDB.dacpac
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\bin\Release\HollywoodDB.dll
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\bin\Release\HollywoodDB.pdb
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Release\HollywoodDB.dll
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Release\HollywoodDB.pdb
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Release\Model.xml
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Release\refactor.xml
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Release\postdeploy.sql
+D:\GDrive\Projects\Business\Hollywood\HollywoodDB\obj\Release\predeploy.sql

@@ -1,0 +1,39 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column Course in table [dbo].[Students] is currently  NCHAR (10) NULL but is being changed to  CHAR (3)
+         NULL. Data loss could occur.
+
+** User actions
+     Alter
+       [dbo].[Students] (Table)
+       [dbo].[uspGetStudentDailyEvents] (Procedure)
+
+** Supporting actions
+     Refresh
+       [dbo].[vwActiveStudentsLatestEvent] (View)
+       [dbo].[vwDailyEvents] (View)
+       [dbo].[vwStudentEvents] (View)
+       [dbo].[uspAddStudent] (Procedure)
+       [dbo].[uspDeleteStudent] (Procedure)
+       [dbo].[uspDropStudent] (Procedure)
+       [dbo].[uspGetStudent] (Procedure)
+       [dbo].[uspGetStudentCurrentEvent] (Procedure)
+       [dbo].[uspGetStudents] (Procedure)
+       [dbo].[uspLookupStudent] (Procedure)
+       [dbo].[uspSaveStudent] (Procedure)
+       [dbo].[uspStudentSummaryRpt] (Procedure)
+       [dbo].[uspUpdateStudent] (Procedure)
+       [dbo].[uspGetActiveStudentInClass] (Procedure)
+       [dbo].[uspGetActiveStudentList] (Procedure)
+       [dbo].[uspGeStudentEventsByDateRange] (Procedure)
+       [dbo].[uspGetEventsByDateRange] (Procedure)
+       [dbo].[uspGetStudentTodayEvent] (Procedure)
+
+The type for column Course in table [dbo].[Students] is currently  NCHAR (10) NULL but is being changed to  CHAR (3) NULL. Data loss could occur.
+
